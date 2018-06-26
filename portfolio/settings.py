@@ -25,7 +25,7 @@ SECRET_KEY = 'g#bdq&dh#j%a_ocs00o!r$p8_$gz3yeh)-n#&=doq4_yvt2ret'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['harish-bhakuni.herokuapp.com/']
 
 
 # Application definition
@@ -40,17 +40,6 @@ INSTALLED_APPS = [
     'jobs.apps.JobsConfig',
     'blog.apps.BlogConfig',
 ]
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    "django.contrib.auth.context_processors.auth",
-    "django.core.context_processors.request",
-    "django.core.context_processors.debug",
-    "django.core.context_processors.i18n",
-    "django.core.context_processors.media",
-    "django.core.context_processors.static",
-    "django.core.context_processors.tz",
-    "django.contrib.messages.context_processors.messages",
-)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
